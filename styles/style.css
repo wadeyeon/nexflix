@@ -1,0 +1,9 @@
+:root {
+  --main-bg-color: #000;
+  --brand-color: #e50815;
+  --main-color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
