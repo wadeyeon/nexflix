@@ -167,3 +167,49 @@ main {
 .main__button > i {
   margin-left: 8px;
 }
+
+/* banner */
+.banner {
+  margin: 64px auto;
+}
+
+.banner__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  height: 80px;
+}
+
+.banner__container:hover {
+  transform: scale(1.02);
+  filter: brightness(110%);
+  transition: all ease 0.2s;
+}
+
+.banner__image {
+  transform: scale(0.8);
+}
+
+.banner__card {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 6px 16px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #261734, #151a3f);
+}
+
+.banner__title {
+  margin-bottom: 4px;
+  font-size: 20px;
+}
+
+.banner__button {
+  padding: 6px 16px;
+  height: 40px;
+  background-color: #404359;
+  font-size: 16px;
+}
