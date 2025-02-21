@@ -81,6 +81,32 @@ a {
   font-size: 24px;
 }
 
+.sign-up__form {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+  width: 100%;
+}
+
+.sign-up__input {
+  flex: 1 1 auto;
+  padding: 0 12px;
+  height: 56px;
+  background-color: rgba(0, 0, 0, 0.75);
+  font-size: 18px;
+}
+
+.sign-up__button {
+  flex: 0 1 auto;
+  padding: 0 24px;
+  height: 56px;
+  font-size: 24px;
+}
+
+.sign-up__button > i {
+  margin-left: 8px;
+}
+
 /* header */
 header {
   position: absolute;
@@ -150,32 +176,6 @@ main {
 .main__text {
   margin: 12px 0;
   font-size: 16px;
-}
-
-.main__form {
-  display: flex;
-  gap: 8px;
-  margin-top: 12px;
-  width: 100%;
-}
-
-.main__input {
-  flex: 1 1 auto;
-  padding: 0 12px;
-  height: 56px;
-  background-color: rgba(0, 0, 0, 0.75);
-  font-size: 18px;
-}
-
-.main__button {
-  flex: 0 1 auto;
-  padding: 0 28px;
-  height: 56px;
-  font-size: 18px;
-}
-
-.main__button > i {
-  margin-left: 8px;
 }
 
 /* banner */
@@ -350,4 +350,14 @@ main {
 
 .faq__card-text.gap {
   margin-bottom: 32px;
+}
+
+/* signUp */
+.sign-up {
+  margin: 64px auto;
+  text-align: center;
+}
+
+.sign-up__container {
+  max-width: 783px;
 }
