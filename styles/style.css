@@ -246,6 +246,7 @@ main {
 }
 
 .contents__list {
+  flex: 1 1 auto;
   position: relative;
   margin: 0 16px;
   cursor: pointer;
@@ -267,7 +268,7 @@ main {
 }
 
 .contents__more {
-  flex: 1 1 36px;
+  flex: 0 1 36px;
 }
 
 .contents__more-button {
