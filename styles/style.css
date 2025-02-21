@@ -71,6 +71,11 @@ input:focus {
   max-width: 80%;
 }
 
+.title {
+  margin: 20px 0;
+  font-size: 24px;
+}
+
 /* header */
 header {
   position: absolute;
@@ -219,11 +224,6 @@ main {
   margin: 64px auto;
 }
 
-.contents__title {
-  margin: 20px 0;
-  font-size: 24px;
-}
-
 .contents__container {
   display: flex;
   justify-content: space-between;
@@ -268,4 +268,39 @@ main {
   width: 24px;
   height: 120px;
   background-color: #1a1a1a;
+}
+
+/* reason */
+.reason {
+  margin: 64px auto;
+}
+
+.reason__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 200px);
+  gap: 12px;
+}
+
+.reason__card {
+  position: relative;
+  padding: 24px;
+  border-radius: 12px;
+  background: linear-gradient(to bottom right, #1a2144, #20111d);
+}
+
+.reason__card-title {
+  margin-bottom: 14px;
+  font-size: 20px;
+}
+
+.reason__card-text {
+  line-height: 1.2;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.reason__card-image {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
 }
