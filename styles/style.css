@@ -28,6 +28,8 @@
   --brand-color: #e50815;
   --main-color: #fff;
   --sub-color: rgba(255, 255, 255, 0.7);
+
+  --section-gap: 64px;
 }
 
 body {
@@ -107,6 +109,15 @@ a {
   margin-left: 8px;
 }
 
+.language__container {
+  display: flex;
+  align-items: center;
+  padding: 0 6px;
+  border: 0.01rem solid var(--main-color);
+  border-radius: 4px;
+  height: 32px;
+}
+
 /* header */
 header {
   position: absolute;
@@ -131,15 +142,6 @@ header {
 .header__nav {
   display: flex;
   align-items: center;
-}
-
-.header__nav__select {
-  display: flex;
-  align-items: center;
-  padding: 0 6px;
-  border: 0.01rem solid var(--main-color);
-  border-radius: 4px;
-  height: 32px;
 }
 
 .header__nav__button {
@@ -180,7 +182,7 @@ main {
 
 /* banner */
 .banner {
-  margin: 64px auto;
+  margin: var(--section-gap) auto;
 }
 
 .banner__container {
@@ -226,7 +228,7 @@ main {
 
 /* contents */
 .contents {
-  margin: 64px auto;
+  margin: var(--section-gap) auto;
 }
 
 .contents__container {
@@ -277,7 +279,7 @@ main {
 
 /* reason */
 .reason {
-  margin: 64px auto;
+  margin: var(--section-gap) auto;
 }
 
 .reason__container {
@@ -312,7 +314,7 @@ main {
 
 /* faq */
 .faq {
-  margin: 64px auto;
+  margin: var(--section-gap) auto;
 }
 
 .faq__card {
@@ -354,10 +356,48 @@ main {
 
 /* signUp */
 .sign-up {
-  margin: 64px auto;
+  margin: var(--section-gap) auto;
   text-align: center;
 }
 
 .sign-up__container {
   max-width: 783px;
+}
+
+/* footer */
+footer {
+  margin-bottom: 96px;
+  color: var(--sub-color);
+}
+
+footer a {
+  color: var(--sub-color);
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.footer__links {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.footer__link {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer__select {
+  width: 128px;
+}
+
+.footer__contact {
+  font-size: 12px;
+  line-height: 1.1;
 }
