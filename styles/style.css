@@ -343,8 +343,11 @@ main {
 }
 
 .faq__card-body {
-  display: none;
   padding: 24px;
+}
+
+.faq__card-body.hide {
+  display: none;
 }
 
 .faq__card-text {
