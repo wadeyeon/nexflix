@@ -365,7 +365,7 @@ main {
 }
 
 .sign-up__container {
-  max-width: 783px;
+  max-width: 768px;
 }
 
 /* footer */
@@ -404,4 +404,71 @@ footer a {
 .footer__contact {
   font-size: 12px;
   line-height: 1.1;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .reason__card-image {
+    display: none;
+  }
+
+  .sign-up__container {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 12px;
+    max-width: 90%;
+  }
+
+  .sign-up__form {
+    flex-direction: column;
+  }
+
+  .sign-up__button {
+    padding: 0 20px;
+    font-size: 18px;
+  }
+
+  .banner__container {
+    height: auto;
+  }
+
+  .banner__image {
+    display: none;
+  }
+
+  .banner__card {
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+  }
+
+  .reason__container {
+    grid-template-columns: none;
+    grid-template-rows: auto;
+    gap: 12px;
+  }
+
+  .reason__card {
+    padding: 20px;
+  }
+
+  .faq__card {
+    font-size: 18px;
+  }
+
+  .faq__card-header {
+    padding: 20px;
+  }
+
+  .faq__card-button {
+    font-size: 28px;
+  }
+
+  .footer__links {
+    flex-direction: column;
+  }
 }
